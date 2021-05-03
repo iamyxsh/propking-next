@@ -25,6 +25,7 @@ export default function ButtonAppBar({ reload, setReload }) {
 	const [token, setToken] = useState("")
 
 	useEffect(() => {
+		setToken("")
 		setToken(localStorage.getItem("token"))
 	}, [reload])
 

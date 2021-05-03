@@ -46,6 +46,7 @@ export default function LandItem({
 	}, [edit])
 
 	const handleDelete = async () => {
+		console.log(token)
 		if (!token) {
 			setErr("Unauthorized Acess. Please login.")
 			setTimeout(() => {
